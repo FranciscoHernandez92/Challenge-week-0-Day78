@@ -1,0 +1,43 @@
+* {box-sizing: border-box;
+}
+body{
+  background-image: url('https://wallpaperaccess.com/full/866650.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1{
+  color: crimson;
+}
+.title{
+  text-decoration:underline;
+  margin-left: 50px;
+  text-align: left;
+}
+select {
+  margin-left: 65px;
+  text-align: center;
+}
+.ingredients {
+  margin-left: 65px;
+  list-style: none;
+  margin-right: 60px;
+}
+button{
+  margin-left: 50px;
+  display: inline-block;
+  border-color: red;
+  border-radius: 40px;
+  padding: 8px;
+  margin-top: 20px;
+  align-items: center;
+  margin-right: 30px;
+}
+main{
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  width: 300px;
+  height: 450px;
+  
+}
