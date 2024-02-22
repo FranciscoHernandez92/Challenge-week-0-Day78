@@ -12,6 +12,7 @@ h1{
   text-decoration:underline;
   margin-left: 50px;
   text-align: left;
+  color: black;
 }
 select {
   margin-left: 65px;
@@ -33,11 +34,25 @@ button{
   margin-right: 30px;
 }
 main{
+  color: black;
   border-top: 3px solid black;
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
   width: 300px;
   height: 450px;
+  background-image: url('https://th.bing.com/th/id/OIP.wfeiZTxD3LhO072SnPz39QHaE7?w=259&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+  background-size: cover;
+  background-attachment:local
   
+}
+.final-order{
+  margin-left: 350px;
+  margin-top: -100px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  width: 200px;
+  height: 100px;
 }
