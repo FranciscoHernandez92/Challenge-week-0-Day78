@@ -1,108 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/main.css">
-  <script type="module" src="/scripts/index.js"></script>
-  <title>TuPizza</title>
-</head>
-<body>
-  <header>
-    <h1>
-     <strong> ¡ CREA TU PIZZA ! </strong> 
-    </h1>
-  </header>
-  <main>
-    <section>
-      <p class="title"><strong> Elige el tamaño de tu pizza:</strong></p>
-      <form class="size">
-      <div>
-        <label>
-          <select class="size-pizza ">
-            <option value="pequeña"> Pequeña</option>
-            <option value="mediana"> Mediana</option>
-            <option value="grande"> Grande</option>
-          </select>
-        </label>
-      </div>
-      </form>
-    </section>
-    <section>
-      <p class="title"> <strong>Elige el tipo de masa:</strong> </p>
-      <form class="dough">
-      <div>
-        <label>
-          <select class = "size-dough">
-            <option value="original"> Original </option>
-            <option value ="fina"> Fina </option>
-          </select>
-        </label>
-      </div>
-      </form>
-    </section>
-    <section>
-      <p class="title"> <strong> Elige tus ingredientes:</strong></p>
-      <form class="ingredients">
-        <div>
-          <label class= "ingredients-pizza">
-            <li>
-             <input type="checkbox" name="ingredient-tomato" value="tomate"> Tomate
-            </li>          
-          </label>
-          <label name = "ingredients-pizza">
-            <li>
-              <input type="checkbox" name="ingredient-ham" value="jamon"> Jamon
-            </li>
-          </label>
-          <label name = "ingredients-pizza">
-            <li>
-              <input type="checkbox" name="ingredient-onion" value="cebolla"> Cebolla
-            </li>
-          </label>          
-          <label name = "ingredients-pizza">
-            <li>
-              <input type="checkbox" name="ingredient-pepperoni" value="pepperoni"> Pepperoni
-           </li>
-          </label>
-          <label name = "ingredients-pizza">
-            <li>
-              <input type="checkbox" name="ingredient-mushrom" value="champiñones"> Champiñones
-            </li>
-          </label>
-          <label name = "ingredients-pizza">
-            <li>
-              <input type="checkbox" name="ingredient-pepper" value="pimientos"> Pimientos
-            </li>
-                   </label>
-          <label name = "ingredients-pizza">
-            <li>
-              <input type="checkbox" name="ingredient-cheese" value="extra de queso"> Extra de queso
-            </li>
-          </label>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script type="module" src="/scripts/index.js"></script>
+    <title>TuPizza</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <strong> ¡ CREA TU PIZZA ! </strong>
+      </h1>
+    </header>
+    <main>
+      <form class="form-pizza">
+        <div class="size">
+          <label>
+            <p class="title"><strong> Elige el tamaño de tu pizza:</strong></p>
+            <select class="size-pizza" required>
+              <option value="">Elige tu tamaño favorito</option>
+              <option value="small">Pequeña</option>
+              <option value="medium">Mediana</option>
+              <option value="big">Grande</option>
+            </select>
           </label>
         </div>
-      </form>
-    </section>
-    <section>
-        <form class="more-pizza">
-        <div>
-          <button type="submit"class="next-order">
-            SEGUIR PIDIENDO
-          </button>
+        <div class="dough">
+          <label>
+            <p class="title"><strong>Elige el tipo de masa:</strong></p>
+            <select class="size-dough" required>
+              <option value="">¿Que masa de gusta?</option>
+              <option value="original">Original</option>
+              <option value="thin">Fina</option>
+            </select>
+          </label>
+        </div>
+        <div class="ingredients">
+          <p><strong> Elige tus ingredientes:</strong></p>
+          <label class="ingredients-pizza">
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ingredient-tomato"
+                value="tomato"
+                checked
+              />Tomate
+            </li>
+          </label>
+          <label name="ingredients-pizza">
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ingredient-ham"
+                value="ham"
+              />
+              Jamon
+            </li>
+          </label>
+          <label name="ingredients-pizza">
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ingredient-onion"
+                value="onion"
+              />
+              Cebolla
+            </li>
+          </label>
+          <label name="ingredients-pizza">
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ingredient-pepperoni"
+                value="pepperoni"
+              />
+              Pepperoni
+            </li>
+          </label>
+          <label name="ingredients-pizza">
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ingredient-mushrom"
+                value="mushrom"
+              />
+              Champiñones
+            </li>
+          </label>
+          <label name="ingredients-pizza">
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ingredient-pepper"
+                value="pepper"
+              />
+              Pimientos
+            </li>
+          </label>
+          <label name="ingredients-pizza">
+            <li>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="ingredient-cheese"
+                value="cheese"
+              />
+              Extra de queso
+            </li>
+          </label>
+        </div>
+        <div class="more-pizza">
+          <button type="reset" class="next-order">SEGUIR PIDIENDO</button>
+        </div>
+        <div class="finish-order">
+          <button type="submit" class="complete-order">TERMINAR PEDIDO</button>
         </div>
       </form>
-    </section>
-    <section>
-      <form class="finish-order">
-        <div>
-          <button type="submit" class="complete-order">
-            TERMINAR PEDIDO
-          </button>
-        </div>
-      </form>
-    </section>
-  </main>
-  <p class="final-order" name="final pizza"></p>
-</body>
+    </main>
+    <p class="final-order">pizza final</p>
+  </body>
 </html>
